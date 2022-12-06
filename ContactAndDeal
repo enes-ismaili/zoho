@@ -5,3 +5,12 @@ contactMap.put("Email", "diar.ismaili@gmail.com");
 createContact = zoho.crm.createRecord("Contacts",contactMap);
 info createContact;
 contactID = createContact.get("id");
+info contactID;
+
+dealMap = Map();
+dealMap.put("Deal_Name","TEST DEAL DIAR");
+dealMap.put("Account_Name","Commercial Press");
+dealMap.put("Closing_Date",zoho.currentdate);
+dealMap.put("Contact_Name",contactID);
+createDeal = zoho.crm.createRecord("Deals",dealMap);
+info createDeal;
