@@ -1,0 +1,7 @@
+contactMap = Map();
+contactMap.put("First_Name","Diar");
+contactMap.put("Last_Name","Ismaili");
+contactMap.put("Email", "diar.ismaili@gmail.com");
+createContact = zoho.crm.createRecord("Contacts",contactMap);
+info createContact;
+contactID = createContact.get("id");
